@@ -2,6 +2,7 @@ public class Vertice {
     int indice;
     Vertice vSiguiente;
     Vertice vAnterior;
+    boolean pared = false;
     ListaAdy <Object> vAdy;
     
     public Vertice(){
@@ -34,4 +35,11 @@ public class Vertice {
     public void setvAnterior(Vertice ind) {
         this.vAnterior = ind;
     }
+    
+    public boolean getPared() {
+        return pared;
+    }
+
+    public void setPared(boolean ind) {
+        this.pared = ind;
 }
