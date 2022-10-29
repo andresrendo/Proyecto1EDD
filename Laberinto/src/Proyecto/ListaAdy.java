@@ -26,6 +26,13 @@ public class ListaAdy <T>{
     }
   }
   
+  public boolean contains(Vertice v){
+    Vertice aux = primero;
+    while (aux.getSiguiente != null){
+      if aux == v  
+    }
+  }
+  
   public eliminar(T dato){
   for(i = primero; i != null, i = primero.getvSiguiente()) {
       if  (i.getIndice == dato){
