@@ -1,5 +1,7 @@
 public class Vertice {
     int indice;
+    Vertice vSiguiente;
+    Vertice vAnterior;
     ListaAdy <Object> vAdy;
     
     public Vertice(){
@@ -14,8 +16,22 @@ public class Vertice {
         this.indice = ind;
     }
 
-  
     public ListAdy getvAdy() {
         return vAdy;
+    }
+    
+    public Vertice getvSiguiente() {
+        return vSiguiente;
+    }
+
+    public void setvSiguiente(Vertice ind) {
+        this.vSiguiente = ind;
+    }
+    public Vertice getvAnterior() {
+        return vAnterior;
+    }
+
+    public void setvAnterior(Vertice ind) {
+        this.vAnterior = ind;
     }
 }
