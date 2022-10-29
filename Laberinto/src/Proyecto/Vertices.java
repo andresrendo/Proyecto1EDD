@@ -1,25 +1,21 @@
 public class Vertice {
-    int numero;
-    Vertice siguiente;
+    int indice;
+    ListaAdy <Object> vAdy;
     
-    public Vertice(int n, Vertice sig){
-        this.numero = n;
-        this.siguiente = sig;
+    public Vertice(){
+        this.indice = -1;
+        this.vAdy = new ListaAdy();
     }
-    public int getNumero() {
-        return numero;
+    public int getIndice() {
+        return indice;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setIndice(int ind) {
+        this.indice = ind;
     }
 
   
-    public Vertice getSigiente() {
-        return sigiente;
-    }
-
-    public void setSigiente(Vertice sigiente) {
-        this.sigiente = sigiente;
+    public ListAdy getvAdy() {
+        return vAdy;
     }
 }
