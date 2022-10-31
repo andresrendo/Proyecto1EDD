@@ -1,13 +1,16 @@
-public class Vertice {
+public class Vertices {
+   
     int indice;
-    Vertice vSiguiente;
-    Vertice vAnterior;
-    boolean pared = false;
+    Vertices vSiguiente;
+    Vertices vAnterior;
+    int peso;
     ListaAdy <Object> vAdy;
     
-    public Vertice(){
-        this.indice = -1;
+    public Vertices(int indice){
+        this.indice = indice;
         this.vAdy = new ListaAdy();
+        this.vAnterior = this.vSiguiente = null;
+        this.peso = 0;
     }
     public int getIndice() {
         return indice;
@@ -17,29 +20,30 @@ public class Vertice {
         this.indice = ind;
     }
 
-    public ListAdy getvAdy() {
+    public ListaAdy getvAdy() {
         return vAdy;
     }
     
-    public Vertice getvSiguiente() {
+    public Vertices getvSiguiente() {
         return vSiguiente;
     }
 
-    public void setvSiguiente(Vertice ind) {
+    public void setvSiguiente(Vertices ind) {
         this.vSiguiente = ind;
     }
-    public Vertice getvAnterior() {
+    public Vertices getvAnterior() {
         return vAnterior;
     }
 
-    public void setvAnterior(Vertice ind) {
+    public void setvAnterior(Vertices ind) {
         this.vAnterior = ind;
     }
-    
-    public boolean getPared() {
-        return pared;
+    public int getPeso() {
+        return peso;
     }
 
-    public void setPared(boolean ind) {
-        this.pared = ind;
+    public void setPeso(int ind) {
+        this.peso = ind;
+    }
 }
+
