@@ -1,3 +1,5 @@
+package Proyecto;
+
 public class Grafo {
     private int vertices;
     private static int maxVertices;

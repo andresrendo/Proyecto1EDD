@@ -1,3 +1,5 @@
+package Proyecto;
+
 public class Vertices {
    
     int indice;

@@ -1,3 +1,5 @@
+package Proyecto;
+
 public class ListaAdy <T>{
   Vertices primero;
   Vertices ultimo;
